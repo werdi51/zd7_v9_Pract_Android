@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ФИО студента"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Дата рождения:"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/tvSelectedDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Не выбрана"
+            android:padding="8dp"
+            android:background="@android:drawable/editbox_background"/>
+
+        <Button
+            android:id="@+id/btnPickDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Выбрать"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Балл аттестата (0-100)"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Форма обучения:"/>
+
+        <Switch
+            android:id="@+id/switchBudget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Бюджет"/>
+
+    </LinearLayout>
+
+</LinearLayout>

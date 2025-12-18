@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Имя преподавателя"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/etTeacherName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите ФИО"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/etTeacherEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="email@example.com"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Максимальная годовая нагрузка (часов)"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/etMaxHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="1440"
+        android:inputType="number"
+        android:text="1440" />
+
+</LinearLayout>
